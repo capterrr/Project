@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DirectoryService.Domain/DirectoryService.Domain.csproj" Id="bdb8589c-b1a4-4e26-a6a5-157a70d9a20c" />
+  <Project Path="DirectoryService.WebApi/DirectoryService.WebApi.csproj" Id="0dd2852d-bba5-4bf5-9e6c-a957b1534eff" />
+</Solution>
