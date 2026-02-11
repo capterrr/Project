@@ -4,12 +4,18 @@ using System.Text;
 
 namespace DirectoryService.Domain.PositionsContext.Value_Objects
 {
-    public record UpdatedAt
-    {
-        public DateTime Value { get; }
+	public record UpdatedAt
+	{
+		public DateTime Value { get; }
 
-        private UpdatedAt(DateTime value) => Value = value;
+        private UpdatedAt(DateTime value)
+        {
+            Value = value;
+        }
 
-        public static UpdatedAt Create() => new(DateTime.UtcNow);
+        public static UpdatedAt Create()
+        {
+            return new(DateTime.UtcNow);
+        }
     }
 }

@@ -4,7 +4,5 @@ using System.Text;
 
 namespace DirectoryService.Domain.DepartmentContext.Value_Objects
 {
-    internal class Depth
-    {
-    }
+	internal class Depth { }
 }

@@ -4,18 +4,29 @@ using System.Text;
 
 namespace DirectoryService.Domain.PositionsContext.Value_Objects
 {
-    public record Description
-    {
-        public string Value { get; }
+	public record Description
+	{
+		public string Value { get; }
+        public const string MaxValue = "500";
 
-        private Description(string value) => Value = value ?? string.Empty;
+        private Description(string value)
+        {
+            Value = value ?? string.Empty;
+        }
 
         public static Description Create(string? input)
         {
-            if (input != null && input.Length > 500)
-                throw new ArgumentException("Описание должности не должно превышать 500 символов", nameof(input));
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new ArgumentException("Описание подразделения не может быть пустым!", nameof(input));
+            }
+            if (input == MaxValue)
+            {
+                throw new ArgumentException("Описание подразделения не должно превышать 500 символов!", nameof(input));
+            }
 
             return new Description(input);
+
         }
     }
 }

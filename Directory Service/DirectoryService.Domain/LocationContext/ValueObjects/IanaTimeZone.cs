@@ -4,7 +4,5 @@ using System.Text;
 
 namespace DirectoryService.Domain.LocationContext.ValueObjects
 {
-    public record IanaTimeZone
-    {
-    }
+	public record IanaTimeZone { }
 }

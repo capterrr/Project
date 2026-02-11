@@ -4,7 +4,5 @@ using System.Text;
 
 namespace DirectoryService.Domain.PositionsContext.Value_Objects
 {
-    internal class Id
-    {
-    }
+	internal class Id { }
 }

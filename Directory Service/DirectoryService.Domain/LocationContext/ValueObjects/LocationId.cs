@@ -4,7 +4,5 @@ using System.Text;
 
 namespace DirectoryService.Domain.LocationContext.ValueObjects
 {
-    public class LocationId
-    {
-    }
+	public class LocationId { }
 }
